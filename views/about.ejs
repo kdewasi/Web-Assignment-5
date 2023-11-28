@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lego Collection</title>
+  <link rel="stylesheet" href="/css/main.css" />
+
+</head>
+
+<body tabindex="-1">
+  <%- include('partials/navbar', {page: '/about' }) %>
+
+  <div class="container mx-auto">
+
+    <div class="hero bg-base-200 rounded-lg p-6">
+      <div class="hero-content text-center ">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">About</h1>
+
+          <details>
+            <summary class="text-white">Theme</summary>
+            <ul class="p-2 w-32 bg-gray-900 right-0">
+                <li><a href="/lego/sets?theme=Jumbo Bricks">Jumbo Bricks</a></li>
+                <li><a href="/lego/sets?theme=Town">Town</a></li>
+                <li><a href="/lego/sets?theme=Spiderman">Spiderman</a></li>
+            </ul>
+        </details>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <img src="https://imgs.search.brave.com/UnrwTb9vlVfmJDlmSttoW1yK5lt7-ZiqYRerKv2B8_4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzQ4LzM5Lzc0/LzM2MF9GXzM0ODM5/NzQwNF93WHVmMjJH/VVBOQWg2N2h0Qlpa/bmFEU3gzQmo5Mnll/cC5qcGc" 
+        alt="scout Image" 
+        class="rounded-lg" 
+        style="max-width: 600px; max-height: 500px;">
+
+      </div>
+      <div class="prose">
+
+        <p>
+            I'm Kishan Dewasi, a passionate designer & developer. Turning ideas into extraordinary digital experiences.
+        </p>
+
+        <p>Hello, I'm  Kishan Dewasi, I've always found web development to be quite fascinating. For me, it's about creating the digital environment we use on a daily basis, not simply about writing code. I can be an innovator, an online experience architect, and a problem solver thanks to web development. It's the science and art of realizing elegant designs and simple functionality. online development is a journey that is always changing, whether it is creating dynamic online.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>

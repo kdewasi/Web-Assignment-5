@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Lego Collection</title>
+</head>
+<body>
+    <%- include('partials/navbar',{page: '/home'})%>
+
+    <div class="container mx-auto mt-8">
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+            <h1 class="text-4xl font-bold mb-4">Discover the Magical World of Lego!</h1>
+            <p class="text-lg mb-4">Dive into our vast Lego Collection and unlock your creativity. Explore unique sets, unleash your imagination, and build unforgettable memories.</p>
+            <a href="/lego/sets" class="btn">Explore Sets</a>
+        </div>
+
+        <div class="mt-8 grid grid-cols-3 gap-4">
+
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://cdn.rebrickable.com/media/sets/0241357594-1.jpg" alt="Lego Set 1" class="mb-4">
+                <h2 class="text-xl font-semibold mb-2">Star Wars: Build Your Own Adventure: Galactic Missions</h2>
+                <p class="text-gray-600 mb-4">An engrossing interactive book set in the popular Star Wars universe is called "Star Wars: Build Your Own Adventure: Galactic Missions." In 50 pages of rich information, readers can create their own adventures, engage with well-known characters, discover a variety of planets, and make decisions that affect the entire galaxy. Take in the compelling stories, starships, and the Force in this captivating book.</p>
+                <a href="/lego/sets/0241357594-1" class="btn">View Set</a>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://cdn.rebrickable.com/media/sets/0241187567-1.jpg" alt="Lego Set 2" class="mb-4">
+                <h2 class="text-xl font-semibold mb-2">Ninjago: Build Your Own Adventure</h2>
+                <p class="text-gray-600 mb-4">The action-packed Ninjago universe serves as the backdrop for the thrilling interactive novel "Ninjago: Build Your Own Adventure." Explore their own adventures, meet Ninjago characters, and take on exciting missions with this 50-page content-rich book. Explore distinctive landscapes, embrace your inner ninja, and influence the course of this legendary ninja realm.</p>
+                <a href="/lego/sets/69" class="btn">View Set</a>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://cdn.rebrickable.com/media/sets/028-1.jpg" alt="Lego Set 3" class="mb-4">
+                <h2 class="text-xl font-semibold mb-2">Nursery Furniture</h2>
+                <p class="text-gray-600 mb-4">The baby furnishings Lego set is a fun collection of parts that allows you to build small baby furnishings. You may construct little cribs, seats, and accessories for your Lego environment using 50 distinct parts and beautiful designs. ideal for bringing warm, inviting elements to any Lego fun excursion.</p>
+                <a href="/lego/sets/028-1" class="btn">View Set</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

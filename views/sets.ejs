@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEGO Sets</title>
+  <link rel="stylesheet" href="/css/main.css" />
+  <style>
+    .colored-text {
+      color: beige;
+    }
+  
+    
+  </style>
+
+  <%- include('partials/navbar', {page: '/about'}) %>
+</head>
+
+<div style="font-family: Arial, sans-serif; background-color: #ffffff; padding: 20px; text-align: center;">
+  <p>Filter By Themes:</p>
+  <div class="max-w-md">
+    <h1 class="text-5xl font-bold">Collection</h1>
+
+    <p class="py-6">Click on any of the three themes below to filter sets: <a href="/lego/sets?theme=Video Games and Accessories"
+        class="btn btn-primary btn-xs">Video games</a> <a href="/lego/sets?theme=Bulk Bricks"
+        class="btn btn-primary btn-xs">Bulk Bricks</a> <a href="/lego/sets?theme=9V"
+        class="btn btn-primary btn-border btn-xs">9V</a> </p>
+  </div>
+</div>
+
+
+
+  <h1 style="text-align: center;">All LEGO Sets</h1>
+
+  <% sets.forEach((set) => { %>
+    <div style="display: flex; border: 1px solid #ddd; margin-bottom: 10px; background-color: #fff; border-radius: 5px; overflow: hidden;">
+
+      <div class="avatar" style="width: 150px; height: 150px; overflow: hidden; margin-right: 15px;">
+        <img src="<%= set.img_url %>" alt="<%= set.name %>" style="width: 100%; height: auto; object-fit: cover;">
+      </div>
+
+      <div style="padding: 15px; flex-grow: 1;">
+        <h3 style="margin-top: 0;"><%= set.name %></h3>
+        <p style="margin: 5px 0;"><strong>Set Type:</strong> <%= set.set_type %></p>
+        <button onclick="location.href='/lego/sets?theme=<%= set.Theme.name %>'" style="background-color: #2196F3; color: white; border: none; border-radius: 5px; padding: 6px 12px; margin-right: 10px; cursor: pointer;"><%= set.Theme.name %></button>
+      </div>
+
+
+      <div style="padding: 15px; flex-grow: 1;">
+        <p style="margin: 5px 0;"><strong>Year Released:</strong> <%= set.year %></p>
+        <p style="margin: 5px 0;"><strong>Number of Parts:</strong> <%= set.num_parts %></p>
+      </div>
+
+     <div style="padding: 15px;">
+  <div style="margin-top: 10px;">
+    <a href="/lego/sets/<%= set.set_num %>" style="text-decoration: none; padding: 8px; background-color: #2196F3; color: white; border: none; border-radius: 5px; display: inline-block;">Details</a>
+  </div>
+      </div>
+    </div>
+  <% }); %>
+  
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/css/main.css" />
+<html data-theme="light"></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lego Collection</title>
+</head>
+<body>
+  <%- include('partials/navbar', {page: '' }) %>
+
+    <div class="container mx-auto">
+
+      <div class="hero bg-base-200">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img src="https://c1.staticflickr.com/5/4182/34207155596_80ce44c15c_z.jpg"
+            class="max-w-sm rounded-lg shadow-2xl" />
+          <div>
+            <h1 class="text-5xl font-bold">Oops!</h1>
+            <p class="py-6">
+              <%= message %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>

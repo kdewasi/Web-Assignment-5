@@ -1,0 +1,16 @@
+<nav class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="/" class="text-2xl font-bold text-white">Lego Collection</a>
+        <div class="space-x-4">
+            <div class="group relative inline-block">
+                <details>
+                    <ul class="p-2 w-32 bg-gray-900 right-0">
+                        <li style="margin-right: 10px;"><a class="<%= (page == "/lego/sets") ? 'active' : '' %>" href="/lego/sets">View Collection</a></li>
+                        <li style="margin-right: 10px;"><a class="<%= (page == "/lego/addSet") ? 'active' : '' %>" href="/lego/addSet">Add to Collection</a></li>       
+                        <li><a class="<%= (page === '/about') ? 'active' : '' %>" href="/about">About</a></li>
+                    </ul>
+                </details>
+            </div>
+        </div>
+    </div>
+</nav>
